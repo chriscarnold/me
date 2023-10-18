@@ -22,5 +22,5 @@ for (let [slug, url] of Object.entries(redirects)) {
     fs.mkdirSync(folderPath, {  recursive:  true  })
 
     // Create an index.html in each slug directory
-    //fs.writeFileSync(path.join(folderPath, 'index.html'), html)
+    fs.writeFileSync(path.join(folderPath, 'index.html'), html)
 }
